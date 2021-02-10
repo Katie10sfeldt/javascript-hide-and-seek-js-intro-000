@@ -16,9 +16,11 @@ function deepestChild() {
 
 
 function increaseRankBy(n) {
-  document.querySelectorAll('.ranked-list li')
-  .forEach(item => {
-    item.parseint() + n;
-    return item.toString();
-  })
+  var list = document.querySelectorAll('.ranked-list li')
+
+  for (let i = 0; i < list.length; i++) {
+    list[i].parseint() + n;
+    list[i].toString();
+  }
+  return list;
 }
