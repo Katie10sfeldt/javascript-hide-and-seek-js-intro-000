@@ -20,7 +20,8 @@ function increaseRankBy(n) {
 
   for (let i = 0; i < list.length; i++) {
     var item = parseInt(list[i].innerHTML, 10);
-    (item + n).toString();
+    var changedItem = (item + n);
+    list[i].innerHTML = changedItem.toString();
   }
   return list;
 }
